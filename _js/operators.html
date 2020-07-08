@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Операторы</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter">
+      <h2 class="main-title">"Операторы"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Арифметические операторы</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Арифметические операторы используются для выполнения арифметических операций между переменными и(или) значениями.</p>
+            <p class="info-block__text">
+              '+' - сложение<br>
+              '-' - вычитание<br>
+              '*' - умножение<br>
+              '/' - деление<br>
+              '%' - деление без остатка<br>
+              '++' - инкремент<br>
+              '--' - декремент
+            </p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Операторы присваивания</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Операторы присваивания используются для присвоения значений переменным.</p>
+            <p class="info-block__text">Таким образом с их помощью можно изменять числовое значение.</p>
+            <p class="info-block__text">Чтобы увеличить или уменьшить число в JavaScript, можно использовать полную или краткую записи.</p>
+            <pre class="info-block__code">let number = 0;</pre>
+            <p class="info-block__text">Полная запись</p>
+            <pre class="info-block__code">number = number + 2; // Значение переменной: 2
+number = number - 2; // Значение переменной: 0</pre>
+            <p class="info-block__text">Краткая запись</p>
+            <pre class="info-block__code">number += 2; // Значение переменной: 2
+number -= 2; // Значение переменной: 0</pre>
+            <p class="info-block__text">Для увеличиния и уменьшения на единицу в JavaScript есть особая запись</p>
+            <p class="info-block__text">Увеличит число на 1</p>
+            <pre class="info-block__code">number++; // Значение переменной: 1</pre>
+            <p class="info-block__text">Уменьшит число на 1</p>
+            <pre class="info-block__code">number--; // Значение переменной: 0</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Строковые операторы (конкатенация)</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Оператор '+' можно использовать для объединения (конкатенации) строк.</p>
+            <pre class="info-block__code">console.log('Конкатенация - это' + ' сложение строк');
+
+let method = 'Конкатенация - это';
+console.log(method + ' сложение строк');</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Операторы сравнения</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Операторы сравнения используются в логических выражениях для определения равенства или разницы между переменными или значениями</p>
+            <p class="info-block__note">* Значения, которые проверяет оператор, называют операндами.</p>
+            <p class="info-block__text">Разница межды операторами строгого и нестрогого равенства(неравенства) в том, что нестрогие операторы сравнения приводят строковое значение в числовое, а строгие операторы сравнения нет. </p>
+            <p class="info-block__text">- Оператор нестрогого равенства</p>
+            <pre class="info-block__code">'123' == 123; // Результат: true</pre>
+            <p class="info-block__text">- Оператор строгого равенства</p>
+            <pre class="info-block__code">'123' === 123; // Результат: false</pre>
+            <p class="info-block__text">- Оператор нестрогого неравенства</p>
+            <pre class="info-block__code">'123' != 123; // Результат: false</pre>
+            <p class="info-block__text">- Оператор строгого неравенства</p>
+            <pre class="info-block__code">'123' !== 123; // Результат: true</pre>
+            <p class="info-block__note">* Оператор строгого неравенства работает противоположно оператору строгого равенства. Если значения равны, он вернёт false, а если не равны, то true.</p>
+            <p class="info-block__text">- Операторы сравнения больше и меньше</p>
+            <pre class="info-block__code">1 > 2; // Оператор «больше»
+1 < 2; // Оператор «меньше»
+1 >= 2; // Оператор «больше или равно»
+1 <= 2; // Оператор «меньше или равно»</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Логические операторы</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Логические операторы используются для определения логики между переменными или значениями.</p>
+            <p class="info-block__text">- Логическиий оператор И</p>
+            <p class="info-block__text">Если хоть один из операторов вернёт false, тогда условие целиком будет считаться ложным:</p>
+            <pre class="info-block__code">true && true; // Результат: true
+true && false; // Результат: false
+false && true; // Результат: false
+false && false; // Результат: false</pre>
+            <p class="info-block__text">- Логический оператор ИЛИ</p>
+            <p class="info-block__text">Если хоть один из операторов вернёт true, тогда условие целиком будет считаться истинным:</p>
+            <pre class="info-block__code">true || true; // Результат: true
+true || false; // Результат: true
+false || true; // Результат: true
+false || false; // Результат: false</pre>
+            <p class="info-block__text">- Логический оператор НЕ</p>
+            <p class="info-block__text">Чтобы создать проверки с отрицанием, используют унарный (одноместный) логический оператор '!':</p>
+            <pre class="info-block__code">var condition = false;
+if (!condition) { // Если условие не истинно, т.е. равно false
+  // код выполнится
+}</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Математический объект</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Объект Math позволяет выполнять математические задачи над числами.</p>
+            <p class="info-block__inner-title">Math.round()</p>
+            <p class="info-block__text">Math.round(x) возвращает значение x, округленное до ближайшего целого числа:</p>
+            <pre class="info-block__code">Math.round(4.7); // returns 5
+Math.round(4.4); // returns 4</pre>
+            <p class="info-block__inner-title">Math.pow()</p>
+            <p class="info-block__text">Math.pow(x, y) возвращает значение x в степень y:</p>
+            <pre class="info-block__code">Math.pow(8, 2); // returns 64</pre>
+            <p class="info-block__inner-title">Math.sqrt()</p>
+            <p class="info-block__text">Math.sqrt(x) возвращает квадратный корень из x:</p>
+            <pre class="info-block__code">Math.sqrt(64); // returns 8</pre>
+            <p class="info-block__inner-title">Math.abs()</p>
+            <p class="info-block__text">Math.abs(x) возвращает абсолютное (положительное) значение x:</p>
+            <pre class="info-block__code">Math.abs(-4.7); // returns 4.7</pre>
+            <p class="info-block__inner-title">Math.ceil()</p>
+            <p class="info-block__text">Math.ceil(x) возвращает значение x, округленное до ближайшего целого числа:</p>
+            <pre class="info-block__code">Math.ceil(4.4); // returns 5</pre>
+            <p class="info-block__inner-title">Math.floor()</p>
+            <p class="info-block__text">Math.floor(x) возвращает значение х округляется вниз до ближайшего целого числа:</p>
+            <pre class="info-block__code">Math.floor(4.7); // returns 4</pre>
+            <p class="info-block__inner-title">Math.min() и Math.max()</p>
+            <p class="info-block__text">Math.min(n1, n2, n3, ..., nX) и Math.max(n1, n2, n3, ..., nX) может использоваться, чтобы найти самое низкое или самое высокое значение в списке аргументов:</p>
+            <pre class="info-block__code">Math.min(0, 150, 30, 20, -8, -200); // returns -200
+Math.max(0, 150, 30, 20, -8, -200); // returns 150</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>

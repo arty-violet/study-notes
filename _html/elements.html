@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>HTML elements</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter">
+      <h2 class="main-title">"HTML элементы"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Метаданные документа</h3>
+          <p class="info-block__subtitle">
+            &lt;!DOCTYPE&gt;,
+            &lt;html&gt;,
+            &lt;head&gt;,
+            &lt;title&gt;,
+            &lt;base&gt;,
+            &lt;meta&gt;,
+            &lt;link&gt;,
+            &lt;style&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">&lt;!DOCTYPE&gt;</a>
+                <p class="tag__description">Объявляет тип документа и предоставляет основную информацию для браузера — его язык и версия. В PUG обозначается как doctype html</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/%21doctype" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part1" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_doctype.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">html</a>
+                <p class="tag__description">Корневой элемент HTML-документа. Сообщает браузеру, что это HTML-документ. Является контейнером для всех остальных html-элементов.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/html" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part2" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/element-dokumenta/" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/html" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_html.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">head</a>
+                <p class="tag__description">Элемент-контейнер для метаданных HTML-документа, таких как &lt;title&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;link&gt;, &lt;style&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/head" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part3" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#head" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/head" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_head.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">title</a>
+                <p class="tag__description">Заголовок HTML-документа, отображаемый в верхней части строки заголовка браузера. Также может отображаться в результатах поиска, поэтому это следует принимать во внимание предоставление названия.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/title" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part4" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#title" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/title" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_title.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">base</a>
+                <p class="tag__description">Задает базовый адрес (URL), относительно которого вычисляются все относительные адреса. Это поможет избежать проблем при переносе страницы в другое место, так как все ссылки будут работать, как и прежде.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/base" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#base" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/base" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_base.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">meta</a>
+                <p class="tag__description">Используется для хранения дополнительной информации о странице. Эту информацию используют браузеры для обработки страницы, а поисковые системы — для ее индексации. В блоке &lt;head&gt; может быть несколько тегов &lt;meta&gt;, так как в зависимости от используемых атрибутов они несут разную информацию.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/meta" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part5" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#meta" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/meta" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_meta.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">link</a>
+                <p class="tag__description">Определяет отношения между документом и внешним ресурсом. Также используется для подключения внешних таблиц стилей.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/link" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part7" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#link" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/link" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_link.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">style</a>
+                <p class="tag__description">Подключает встраиваемые таблицы стилей.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/style" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part6" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/metadannye-dokumenta/#style" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/style" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_style.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Cтруктурные элементы</h3>
+          <p class="info-block__subtitle">
+            &lt;body&gt;,
+            &lt;header&gt;,
+            &lt;main&gt;
+            &lt;footer&gt;,
+            &lt;nav&gt;,
+            &lt;article&gt;,
+            &lt;section&gt;,
+            &lt;aside&gt;,
+            &lt;h1-h6&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">body</a>
+                <p class="tag__description">Представляет тело документа (содержимое, не относящееся к метаданным документа).</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/body" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part9" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#body" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/body" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_body.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">header</a>
+                <p class="tag__description">Секция для вводной информации сайта или группы навигационных ссылок. Может содержать один или несколько заголовков, логотип, информацию об авторе.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/header" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#header" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/header" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_header.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">main</a>
+                <p class="tag__description">Контейнер для основного уникального содержимого документа. На одной странице должно быть не более одного элемента &lt;main&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/main" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#main" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/main" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_main.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">footer</a>
+                <p class="tag__description">Определяет завершающую область (нижний колонтитул) документа или раздела.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/footer" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#footer" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/footer" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_footer.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">nav</a>
+                <p class="tag__description">Раздел документа, содержащий навигационные ссылки по сайту.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/nav" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#nav" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/nav" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_nav.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">article</a>
+                <p class="tag__description">Раздел контента, который образует независимую часть документа или сайта, например, статья в журнале, запись в блоге, комментарий.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/article" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#article" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/article" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_article.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">section</a>
+                <p class="tag__description">Определяет логическую область (раздел) страницы, обычно с заголовком.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/section" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#section" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/section" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_section.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">aside</a>
+                <p class="tag__description">Представляет контент страницы, который имеет косвенное отношение к основному контенту страницы/сайта.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/aside" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#aside" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/aside" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_aside.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">h1-h6</a>
+                <p class="tag__description">Создают заголовки шести уровней для связанных с ними разделов.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/h1" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-text/#part1" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/razdely-dokumenta/#headings" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_hn.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Блочные элементы</h3>
+          <p class="info-block__subtitle">
+            &lt;div&gt;
+            &lt;p&gt;,
+            &lt;ul&gt;,
+            &lt;ol&gt;,
+            &lt;li&gt;,
+            &lt;dl&gt;,
+            &lt;dt&gt;,
+            &lt;dd&gt;,
+            &lt;blockquote&gt;,
+            &lt;pre&gt;,
+            &lt;address&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">div</a>
+                <p class="tag__description">Тег-контейнер для разделов HTML-документа. Используется для группировки блочных элементов с целью форматирования стилями.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/div" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#div" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/teg-div-teg-span" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/div" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_div.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">p</a>
+                <p class="tag__description">Параграфы в тексте.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/p" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#p" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/p" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_p.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">ul</a>
+                <p class="tag__description">Создает маркированный список.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/ul" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#ul" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-lists/#part1" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ul" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_ul.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">ol</a>
+                <p class="tag__description">Упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/ol" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#ol" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-lists/#part2" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ol" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_ol.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">li</a>
+                <p class="tag__description">Элемент маркированного или нумерованного списка.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/li" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#li" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/li" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_li.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">dl</a>
+                <p class="tag__description">Тег-контейнер, внутри которого находятся термин и его описание.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/dl" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#dl" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-lists/#part3" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/dl" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_dl.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">dt</a>
+                <p class="tag__description">Используется для задания термина.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/dt" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#dt" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/dt" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_dt.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">dd</a>
+                <p class="tag__description">Используется для описания термина из тега &lt;dt&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/dd" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#dd" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/dd" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_dd.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">blockquote</a>
+                <p class="tag__description">Выделяет текст как цитату, применяется для описания больших цитат.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/blockquote" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#blockquote" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_blockquote.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">pre</a>
+                <p class="tag__description">Выводит текст без форматирования, с сохранением пробелов и переносов текста. Может быть использован для отображения компьютерного кода, сообщения электронной почты и т.д.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/pre" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#pre" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/pre" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_pre.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">address</a>
+                <p class="tag__description">Задает контактные данные автора/владельца документа или статьи. Отображается в браузере курсивом.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/address" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#address" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/address" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_address.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Текстовые элементы</h3>
+          <p class="info-block__subtitle">
+            &lt;span&gt;,
+            &lt;a&gt;,
+            &lt;q&gt;,
+            &lt;cite&gt;,
+            &lt;code&gt;,
+            &lt;b&gt;,
+            &lt;strong&gt;,
+            &lt;i&gt;,
+            &lt;em&gt;,
+            &lt;mark&gt;,
+            &lt;ins&gt;,
+            &lt;del&gt;,
+            &lt;sub&gt;,
+            &lt;sup&gt;,
+            &lt;data&gt;,
+            &lt;time&gt;,
+            &lt;br&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">span</a>
+                <p class="tag__description">Контейнер для строчных элементов. Можно использовать для форматирования отрывков текста, например, выделения цветом отдельных слов.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/span" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#span" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/span" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_span.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">a</a>
+                <p class="tag__description">Создаёт гипертекстовые ссылки.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/a" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/hyperlinks-in-html/" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_a.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">q</a>
+                <p class="tag__description">Определяет краткую цитату.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/q" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#q" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/q" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_q.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">cite</a>
+                <p class="tag__description">Используется для указания источника цитирования. Отображается курсивом.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/cite" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#cite" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/cite" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_cite.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">code</a>
+                <p class="tag__description">Представляет фрагмент программного кода, отображается шрифтом семейства monospace.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/code" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#code" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/code" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_code.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">b</a>
+                <p class="tag__description">Задает полужирное начертание отрывка текста, не придавая акцент или важность выделенному.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/b" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#b" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/b" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_b.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">strong</a>
+                <p class="tag__description">Расставляет акценты в тексте, выделяя полужирным.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/strong" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#strong" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/strong" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_strong.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">i</a>
+                <p class="tag__description">Выделяет отрывок текста курсивом, не придавая ему дополнительный акцент.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/i" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#i" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/i" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_i.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">em</a>
+                <p class="tag__description">Выделяет важные фрагменты текста, отображая их курсивом.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/em" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#em" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/em" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_em.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">mark</a>
+                <p class="tag__description">Выделяет фрагменты текста, помечая их желтым фоном.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/mark" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#mark" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/mark" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_mark.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">ins</a>
+                <p class="tag__description">Выделяет текст подчеркиванием. Применяется для выделения изменений, вносимых в документ.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/ins" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/pravki-dokumenta/#ins" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/ins" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_ins.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">del</a>
+                <p class="tag__description">Помечает текст как удаленный, перечёркивая его.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/del" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/pravki-dokumenta/#del" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/del" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_del.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">sub</a>
+                <p class="tag__description">Задает подстрочное написание символов, например, индекса элемента в химических формулах.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/sub" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#sub-sup" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/sub" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_sub.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">sup</a>
+                <p class="tag__description">Задает надстрочное написание символов.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/sup" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#sub-sup" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/sup" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_sup.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">data</a>
+                <p class="tag__description">Элемент используется для связывания значения атрибута value, которое представлено в машиночитаемом формате и может быть обработано компьютером, с содержимым тега.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/data" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#data" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/data" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_data.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">time</a>
+                <p class="tag__description">Определяет дату/время.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/time" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#time" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/time" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_time.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">br</a>
+                <p class="tag__description">Перенос текста на новую строку.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/br" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/semantika-urovnya-teksta/#br" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/br" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_br.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Изображения и мультимедиа</h3>
+          <p class="info-block__subtitle">
+            &lt;img&gt;,
+            &lt;picture&gt;,
+            &lt;figure&gt;,
+            &lt;figcaption&gt;,
+            &lt;audio&gt;,
+            &lt;video&gt;,
+            &lt;source&gt;,
+            &lt;track&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">img</a>
+                <p class="tag__description">Встраивает изображения в HTML-документ с помощью атрибута src, значением которого является адрес встраиваемого изображения.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/img" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/images-in-html" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/img" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_img.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">picture</a>
+                <p class="tag__description">Элемент-контейнер, содержащий один элемент &lt;img%gt; и ноль или несколько элементов &lt;source%gt;. Сам по себе ничего не отображает. Дает возможность браузеру выбирать наиболее подходящее изображение.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/picture" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/picture" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_picture.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">figure</a>
+                <p class="tag__description">Самодостаточный тег-контейнер для такого контента как иллюстрации, диаграммы, фотографии, примеры кода, обычно с подписью.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/figure" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#figure" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/figure" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_figure.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">figcaption</a>
+                <p class="tag__description">Заголовок/подпись для элемента &lt;figure&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/figcaption" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/gruppirovka-soderzhimogo/#figcaption" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/figcaption" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_figcaption.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">audio</a>
+                <p class="tag__description">Загружает звуковой контент на веб-страницу.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/audio" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-audio/#audio" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/audio" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_audio.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">video</a>
+                <p class="tag__description">Добавляет на страницу видео-файлы. Поддерживает 3 видео формата: MP4, WebM, Ogg.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/video" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-video/#video" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/video" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_video.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">source</a>
+                <p class="tag__description">Указывает местоположение и тип альтернативных медиаресурсов для элементов &lt;picture%gt;, &lt;video%gt;, &lt;audio%gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/source" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-audio/#source" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-video/#source" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/source" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_source.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">track</a>
+                <p class="tag__description">Добавляет субтитры для элементов &lt;audio%gt; и &lt;video%gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/track" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-audio/#track" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-video/#track" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/track" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_track.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Элементы форм</h3>
+          <p class="info-block__subtitle">
+            &lt;form&gt;,
+            &lt;fieldset&gt;,
+            &lt;legend&gt;,
+            &lt;button&gt;,
+            &lt;input&gt;,
+            &lt;label&gt;,
+            &lt;textarea&gt;,
+            &lt;select&gt;,
+            &lt;optgroup&gt;,
+            &lt;option&gt;,
+            &lt;datalist&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">form</a>
+                <p class="tag__description">Форма для сбора и отправки на сервер информации от пользователей. Не работает без атрибута action.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/form" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#form" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/form" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_form.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">fieldset</a>
+                <p class="tag__description">Группирует связанные элементы в форме, рисуя рамку вокруг них.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/fieldset" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#fieldset" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/fieldset" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_fieldset.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">legend</a>
+                <p class="tag__description">Заголовок элементов формы, сгруппированных с помощью элемента &lt;fieldset&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/legend" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#fieldset" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/legend" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_legend.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">button</a>
+                <p class="tag__description">Создает интерактивную кнопку. Внутрь тега можно поместить содержимое — текст или изображение.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/button" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#button" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/button" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_button.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">input</a>
+                <p class="tag__description">Создает многофункциональные поля формы, в которые пользователь может вводить данные.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/input" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#input" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/input" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_input.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">label</a>
+                <p class="tag__description">Добавляет текстовую метку для элемента &lt;input&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/label" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#label" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/label" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_label.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">textarea</a>
+                <p class="tag__description">Создает большие поля для ввода текста.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/textarea" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#textarea" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/textarea" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_textarea.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">select</a>
+                <p class="tag__description">Элемент управления, позволяющий выбирать значения из предложенного множества. Варианты значений помещаются в &lt;option&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/select" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#select" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/select" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_select.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">optgroup</a>
+                <p class="tag__description">Контейнер с заголовком для группы элементов &lt;option&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/optgroup" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#select" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/optgroup" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_optgroup.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">option</a>
+                <p class="tag__description">Определяет вариант/опцию для выбора в раскрывающемся списке &lt;select&gt;, &lt;optgroup&gt; или &lt;datalist&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/option" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html5-forms/#select" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/option" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_option.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">datalist</a>
+                <p class="tag__description">Элемент-контейнер для выпадающего списка элемента &lt;input&gt;. Варианты значений помещаются в элементы &lt;option&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/datalist" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/datalist" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_datalist.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Элементы таблиц</h3>
+          <p class="info-block__subtitle">
+            &lt;table&gt;,
+            &lt;caption&gt;,
+            &lt;tr&gt;,
+            &lt;th&gt;,
+            &lt;td&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">table</a>
+                <p class="tag__description">Тег для создания таблицы.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/table" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-table/#table" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/table" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_table.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">caption</a>
+                <p class="tag__description">Добавляет подпись к таблице. Вставляется сразу после тега &lt;table&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/caption" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-table/#caption" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/caption" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_caption.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">tr</a>
+                <p class="tag__description">Создает строку таблицы.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/tr" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-table/#tr" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/tr" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_tr.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">th</a>
+                <p class="tag__description">Создает заголовок ячейки таблицы.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/th" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-table/#th" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/th" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_th.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">td</a>
+                <p class="tag__description">Создает ячейку таблицы.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/td" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-table/#td" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/td" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_td.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Скрипты и фреймы</h3>
+          <p class="info-block__subtitle">
+            &lt;script&gt;,
+            &lt;noscript&gt;,
+            &lt;canvas&gt;,
+            &lt;iframe&gt;,
+            &lt;embed&gt;,
+            &lt;object&gt;,
+            &lt;param&gt;
+          </p>
+          <div class="info-block__content">
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">script</a>
+                <p class="tag__description">Используется для определения сценария на стороне клиента (обычно JavaScript). Содержит либо текст скрипта, либо указывает на внешний файл сценария с помощью атрибута src.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/script" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-html/#part8" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/osnovy-javascript/#part1" target="_blank">HTML5BOOK</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/script" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_script.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">noscript</a>
+                <p class="tag__description">Определяет секцию, не поддерживающую сценарий (скрипт).</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/noscript" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/noscript" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_noscript.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">canvas</a>
+                <p class="tag__description">Холст-контейнер для динамического отображения изображений, таких как простые изображения, диаграммы, графики и т.п. Для рисования используется скриптовый язык JavaScript.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/canvas" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/canvas" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_canvas.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">iframe</a>
+                <p class="tag__description">Создает встроенный фрейм, загружая в текущий HTML-документ другой документ.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/iframe" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/iframe" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_iframe.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">embed</a>
+                <p class="tag__description">Тег-контейнер для встраивания внешнего интерактивного контента или плагина.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/embed" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/embed" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_embed.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">object</a>
+                <p class="tag__description">Контейнер для встраивания мультимедиа (например, аудио, видео, Java-апплеты, ActiveX, PDF и Flash). Также можно вставить другую веб-страницу в текущий HTML-документ. Для передачи параметров встраиваемого плагина используется тег &lth;param&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/object" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/object" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_object.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="tag">
+              <div class="tag__container">
+                <button class="example-button"></button><a class="tag__name" href="#">param</a>
+                <p class="tag__description">Определяет параметры для плагинов, встраиваемых с помощью элемента &lth;object&gt;.</p>
+              </div>
+              <div class="example-block">
+                <div class="info-block__references">
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html/param" target="_blank">WEBREF</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/param" target="_blank">MDN</a></p>
+                  <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/tag_param.php" target="_blank">schoolsw3.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3 class="info-block__title _noopen">Интерактивные элементы</h3>
+          <p class="info-block__subtitle">
+            &lt;a&gt;,
+            &lt;button&gt;,
+            &lt;input&gt;,
+            &lt;select&gt;,
+            &lt;textarea&gt;
+          </p>
+        </div>
+        <div class="info-block">
+          <h3 class="info-block__title _noopen">Одиночные элементы</h3>
+          <p class="info-block__subtitle">
+            &lt;br&gt;,
+            &lt;hr&gt;,
+            &lt;img&gt;,
+            &lt;input&gt;,
+            &lt;meta&gt;,
+            &lt;link&gt;,
+            &lt;embed&gt;,
+            &lt;param&gt;,
+            &lt;source&gt;,
+            &lt;track&gt;
+          </p>
+        </div>
+        <div class="info-block">
+          <h3 class="info-block__title _noopen">Ссылки для дополнительной информации</h3>
+          <div class="info-block__references">
+            <p class="info-block__note">~ <a class="info-block__link" href="https://webref.ru/html" target="_blank">WEBREF</a></p>
+            <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-tags" target="_blank">HTML5BOOK</a></p>
+            <p class="info-block__note">~ <a class="info-block__link" href="https://html5book.ru/html-html5" target="_blank">HTML5BOOK</a></p>
+            <p class="info-block__note">~ <a class="info-block__link" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element" target="_blank">MDN</a></p>
+            <p class="info-block__note">~ <a class="info-block__link" href="https://schoolsw3.com/tags/ref_byfunc.php" target="_blank">schoolsw3.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>

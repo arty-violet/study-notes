@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Заявления</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter _05">
+      <h2 class="main-title">"Заявления"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">if</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Условная конструкция if указывает блок кода, который будет выполнен, если условие истинно</p>
+            <pre class="info-block__code">if (условие) {
+  // Инструкции, которые выполнятся, если условие истинно;
+}</pre>
+            <pre class="info-block__code">if (element.classList.contains('some-class')) {
+  console.log('Условие истинно');
+  // Сообщение выведется, только если класс у элемента есть (возвращает true).
+}</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">else</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Условная конструкция else указывает блок кода, который будет выполнен, если условие ложно</p>
+            <pre class="info-block__code">if(условие) {
+  // Инструкции, которые выполнятся, если условие истинно;
+} else {
+  // Инструкции, которые выполнятся, если условие ложно;
+}</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">else if</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Конструкция else if позволяет добавить в условную конструкцию альтернативную ветку c условием.</p>
+            <pre class="info-block__code">if (условие-1) {
+  // Инструкции выполнятся, если истинно условие-1
+} else if (условие-2) {
+  // Инструкции выполнятся, если условие-1 ложно, а условие-2 истинно
+} else {
+  // Инструкции выполнятся, если оба условия ложны
+}</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">for ... of</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Цикл for of — это конструкция, которая позволяет выполнить код несколько раз.</p>
+            <pre class="info-block__code">for (let переменная of коллекция) {
+  // Код, который нужно выполнить несколько раз
+}</pre>
+            <p class="info-block__note">* При создании цикла в круглых скобках также нужно указать переменную. Обычно для этого объявляют новую переменную и используют её только внутри цикла</p>
+            <pre class="info-block__code">let elements = document.querySelectorAll('selector'); // Находим все нужные селекторы
+for (let element of elements) { // Создаём цикл и переменную
+  console.log(element); // Выводим элементы в консоль
+}</pre>
+            <pre class="info-block__code">for (let element of elements) { // Создаём цикл и переменную
+  element.событие = function () {}; // Добавляем элементам обработчик(и) события
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>

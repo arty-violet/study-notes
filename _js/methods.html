@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Методы</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter">
+      <h2 class="main-title">"Методы"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">append и appendChild</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью метода append и appendChild можно добавлять в конец родительского элемента дополнительные элементы либо содержимое для элемента</p>
+            <pre class="info-block__code">элемент-родитель.append('добавляемый-элемент');
+элемент-родитель.append('какой-либо текст');
+
+элемент-родитель.appendChild('добавляемый-элемент');
+элемент-родитель.appendChild('какой-либо текст');</pre>
+            <p class="info-block__note">* Добавлять с помощью этих методов можно и элементы, и простые строки.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">createElement</h3>
+          <div class="info-block__content">
+            <p class="info-block__inner-title">~ Создание DOM-элемента ~</p>
+            <p class="info-block__text">С помощью метода createElement можно создать элементный узел внутри DOM структуры </p>
+            <pre class="info-block__code">document.createElement('имя тега');</pre>
+            <p class="info-block__text">Метод принимает на вход строку с именем тега и возвращает созданный DOM-элемент. Например создадим элемент &lt;div&gt;:</p>
+            <pre class="info-block__code">let newElement = document.createElement('div');
+// Будет создан новый элемент &lt;div&gt; и записан в переменную.</pre>
+            <p class="info-block__inner-title">~ Добавление свойств ~</p>
+            <p class="info-block__text">Для изменения свойств созданного элемента можно воспользоваться дополнительными свойствами, например: textContent - для замены содержимого элемента, либо classList с методом add - для добавления класса новому элементу.</p>
+            <pre class="info-block__code">newElement.textContent = 'Я новый абзац!';
+newElement.classList.add('some-class');</pre>
+            <p class="info-block__inner-title">~ Добавление в DOM-дерево ~</p>
+            <p class="info-block__text">Вновь созданный элемент по умолчанию не находится в DOM-дереве и не отображается на странице. Мы просто храним его где-то в переменной. Чтобы новый элемент появился на странице, его нужно добавить в DOM. Для этого найдём в текущем DOM-дереве элемент (родитель) и вставим в него наш элемент.</p>
+            <pre class="info-block__code">let parent = document.querySelector('.parent');</pre>
+            <p class="info-block__text">Чтобы добавить новый элемент в конец элемента-родителя, можно воспользоваться методом append либо appendChild</p>
+            <pre class="info-block__code">parent.append(newElement);
+parent.appendChild(newElement);</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">classList.contains</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью свойства classList с применением к нему метода contains можно проверять наличие класса</p>
+            <pre class="info-block__code">element.classList.contains('class');</pre>
+            <p class="info-block__note">* Метод classList.contains вернёт true(истина), если класс у элемента есть, и false(ложь), если класса нет.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">classList.add</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью свойства classList с применением к нему метода add можно добавлять класс элементу</p>
+            <pre class="info-block__code">element.classList.add('сlass');</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">classList.remove</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью свойства classList с применением к нему метода remove можно убирать класс у элемента</p>
+            <pre class="info-block__code">element.classList.remove('сlass');</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">classList.toggle</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью свойства classList с применением к нему метода toggle можно переключать классы у элемента</p>
+            <pre class="info-block__code">element.classList.toggle('сlass');</pre>
+            <button class="example-button"></button>
+            <div class="example-block">
+              <pre>example code:
+let element = document.querySelector('.сlass');
+if (element.classList.contains('some-class')) {
+  console.log('Условие истинно');
+  // Сообщение выведется, только если класс у элемента есть (возвращает true).
+}</pre>
+              <iframe height="471" style="width: 100%;" scrolling="no" title="FlashNews" src="https://codepen.io/artysoule/embed/BajRrVe?height=471&amp;theme-id=dark&amp;default-tab=js" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">querySelector</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью метода querySelector можно находить элементы</p>
+            <pre class="info-block__code">document.querySelector('selector');</pre>
+            <p class="info-block__note">* document - элемент, внутри которого будет искать JavaScript. Вместо элемента document можно использовать и любые другие родительские элементы.</p>
+            <p class="info-block__note">* querySelector - метод или то, что нужно сделать.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">querySelectorAll</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью метода querySelectorAll можно находить все элементы (коллекцию)</p>
+            <p class="info-block__note">* DOM-коллекция, полученная через querySelectorAll похожа на массив, однако им не является и название таких коллекций — псевдомассив.</p>
+            <pre class="info-block__code">let elements = document.querySelectorAll('selector');</pre>
+            <p class="info-block__note">* Коллекцию, как и обычный элемент, можно сохранить в переменной.</p>
+            <p class="info-block__text">Самый простой способ узнать, какие элементы содержит коллекция, — вывести её в консоль:</p>
+            <pre class="info-block__code">console.log(elements);</pre>
+            <p class="info-block__text">К элементам коллекции можно обращаться по индексу</p>
+            <p class="info-block__text">Индекс — это порядковый номер элемента в коллекции.</p>
+            <p class="info-block__note">* !! Отсчёт начинается с нуля, поэтому у первого элемента индекс 0, а у второго — 1.</p>
+            <pre class="info-block__code">коллекция[индекс] ~ elements[i]
+let elements = document.querySelectorAll('selector');
+console.log(elements[0]); // Выведет первый элемент коллекции
+console.log(elements[1]); // Выведет второй элемент коллекции</pre>
+            <p class="info-block__text">К элементам коллекции выбранным по индексу можно добавлять обработчики событий</p>
+            <pre class="info-block__code">elements[0].событие = function () {};
+elements[1].событие = function () {};</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">scrollTo</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Чтобы прокрутить страницу используем метод scrollTo:</p>
+            <pre class="info-block__code">window.scrollTo(координата - Х, координата - Y);</pre>
+            <p class="info-block__text">Координата Х указывает, куда нужно прокрутить страницу по горизонтали, а координата Y— куда нужно прокрутить страницу по вертикали.</p>
+            <p class="info-block__text">Точка указывается относительно левого верхнего угла окна.</p>
+            <pre class="info-block__code">window.scrollTo(100, 50); // Прокрутит страницу на 100px вправо и на 50px вниз</pre>
+            <p class="info-block__note">* Координаты задаются в пикселях, но указывать единицы измерения не нужно</p>
+            <p class="info-block__text">Чтобы при взаимодействии с элементом, например при клике на него, страница прокручивалась к началу, нужно добавить инструкцию с методом scrollTo внутрь обработчика событий onclick.</p>
+            <pre class="info-block__code">элемент.onclick = function () {
+  window.scrollTo(0, 0);
+};</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">toString()</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Чтобы привести числовое значение к строковому типу. Один из способов — использовать метод toString(). Например:</p>
+            <pre class="info-block__code">var number = 1;
+console.log(number); // выведет число: 1 (number)
+console.log(number.toString()); // выведет строку: 1 (string)</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">parseInt()</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Чтобы превратить строковое значение к числовому типу. Один из способов — использовать метод parseInt(). Например:</p>
+            <pre class="info-block__code">var string = '1';
+console.log(string); // выведет строку: 1 (string)
+console.log(parseInt(string, 10)); // выведет число: 1 (number)</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>События</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter">
+      <h2 class="main-title">"События"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Что такое обработчик событий</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Действие, когда пользователь что-то делает с элементами страницы (например, кликает по кнопке или нажимает клавишу) называется событием. </p>
+            <pre class="info-block__code">element.onclick = function () {
+  console.log('Клик!');
+};</pre>
+            <p class="info-block__note">* Клик по элементу - это событие, а та часть инструкции, которая идёт после onclick, называется обработчиком событий.</p>
+            <p class="info-block__text">Обработчик события для элемента можно добавить ещё и другим способом с помощью функции addEventListener() ~ «слушатель события». </p>
+            <pre class="info-block__code">element.addEventListener('click', function () {
+  // Инструкции, которые будут выполняться при клике на элемент
+});</pre>
+            <p class="info-block__text">Первый параметр функции addEventListener - название события, которое мы хотим поймать.</p>
+            <p class="info-block__note">* Название записывается строкой, поэтому обязательно указывается в кавычках. Для всех событий есть специальные зафиксированные названия, список которых можно посмотреть <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">здесь</a>.</p>
+            <p class="info-block__text">Второй параметр addEventListener — функция. Это и есть обработчик события.</p>
+            <p class="info-block__note">* Внутри этой функции мы указываем, что нужно сделать, когда произойдёт событие, как его нужно обработать. То есть действия из тела этой функции выполнятся только тогда, когда произойдёт установленное событие.</p>
+            <p class="info-block__text">Из этого также следует, что события асинхронны, то есть происходят не по расписанию в какое-то конкретное время, друг за другом, а тогда, когда понадобится.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">keydown</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Событие keydown срабатывает при нажатии на любую клавишу</p>
+            <p class="info-block__note">* Слушать это событие можно только на элементах, которые имеют состояние фокуса: поля ввода, кнопки, элементы с атрибутом tabindex, документ. При нажатии фокус должен находиться на соответствующем элементе.</p>
+            <pre class="info-block__code">document.addEventListener('keydown', function() {
+  // Код отсюда выполнится при каждом нажатии любой клавиши
+});</pre>
+            <p class="info-block__note">* onchange срабатывает, если значение поля ввода изменилось и пользователь закончил ввод. Например, если пользователь передвинул ползунок и отпустил его. Или ввёл что-то в текстовое поле и убрал из него курсор.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">onchange</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Обработчик событий onchange используется для того, чтобы отследить событие об изменении элемента, например когда пользователь выбирает новое значение из выпадающего списка, а также при переключении чекбокса или радиокнопки</p>
+            <pre class="info-block__code">select.onchange = function () {
+  console.log(select.value); // Выводим в консоль новое значение
+};
+
+checkbox.onchange = function () {
+  // Инструкции выполняемые при переключении чекбокса
+};</pre>
+            <p class="info-block__note">* onchange срабатывает, если значение поля ввода изменилось и пользователь закончил ввод. Например, если пользователь передвинул ползунок и отпустил его. Или ввёл что-то в текстовое поле и убрал из него курсор.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">oninput</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Получить текстовые значения можно с помощью обработчика событий oninput.</p>
+            <pre class="info-block__code">element.oninput = function () {};</pre>
+            <p class="info-block__text">Инструкции внутри обработчика oninput выполняются каждый раз, когда значение в поле ввода меняется</p>
+            <p class="info-block__text">Благодаря обработчику событий oninput мы можем получить текстовые значения сразу во время набора текста, цифр или символов</p>
+            <p class="info-block__note">* oninput срабатывает на каждое изменение значения, независимо от того, завершил пользователь ввод или нет. Например, он сработает на каждое изменение положения ползунка, даже если пользователь продолжает его двигать. И на каждый новый символ в текстовом поле, даже если пользователь продолжает вводить текст.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">onsubmit</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">С помощью обработчика события onsubmit можно отправить форму</p>
+            <pre class="info-block__code">element(form).onsubmit = function (evt) {
+  evt.preventDefault();
+  console.log('Форма отправлена!');
+};</pre>
+            <p class="info-block__note">!! Обработчик событий onsubmit добавляется не на кнопку, а на саму форму.</p>
+            <p class="info-block__note">* Инструкция evt.preventDefault(); отменяет отправку данных.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">onscroll</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Событие onscroll происходит, когда полоса прокрутки элемента прокручивается.</p>
+            <pre class="info-block__code">object.onscroll = function () {
+ console.log('Страница прокручена');
+}</pre>
+            <p class="info-block__note">* window - окно (или вкладка) браузера </p>
+            <p class="info-block__note">* Обработчик событий onscroll можно добавлять не только окну браузера, но и отдельным элементам на странице.</p>
+            <p class="info-block__text">Чтобы показать елемент при прокрутке, нужно внутрь обработчика событий onscroll добавить условную конструкцию и с помощью оператора сравнения сравнить величину прокрутки с числом, например с числом 200 равное 200px:</p>
+            <pre class="info-block__code">if (window.pageYOffset > 200) {</pre>
+            <p class="info-block__note">* Если условие истинно, показываем элемент</p>
+            <pre class="info-block__code">}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>

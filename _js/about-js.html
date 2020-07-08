@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Основы JavaScript</title>
+    
+    <meta charset="utf-8">
+    <meta content="Arty Soule" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/libs.css?200609">
+    <link rel="stylesheet" href="../css/style.css?200609">
+  </head>
+  <body class="container grid-system">
+    <a class="main-page__link" href="../index.html">Главная страница</a>
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li><a class="nav-menu__link" href="../_html/about-html.html">HTML</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_html/elements.html">Элементы</a></li>
+            <li><a class="nav-menu__link" href="../_html/attributes.html">Аттрибуты</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-menu__link" href="../_css/about-css.html">CSS</a></li>
+        <li><a class="nav-menu__link" href="../_pug/about-pug.html">PUG</a></li>
+        <li><a class="nav-menu__link" href="../_scss/about-scss.html">SCSS</a></li>
+        <li><a class="nav-menu__link" href="../_js/about-js.html">JavaScript</a>
+          <ul class="nav-menu__inner-list">
+            <li><a class="nav-menu__link" href="../_js/operators.html">Операторы</a></li>
+            <li><a class="nav-menu__link" href="../_js/methods.html">Методы</a></li>
+            <li><a class="nav-menu__link" href="../_js/properties.html">Свойства</a></li>
+            <li><a class="nav-menu__link" href="../_js/events.html">События</a></li>
+            <li><a class="nav-menu__link" href="../_js/statements.html">Заявления</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="chapter">
+      <h2 class="main-title">"Основы JavaScript"</h2>
+      <p class="hr">----------------------------------</p>
+      <div class="info-blocks">
+        <div class="info-blocks__toggle-bar"><span class="info-blocks__toggle _on">+</span><span class="info-blocks__toggle _off">-</span></div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Основные понятия</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">JavaScript особым образом воспринимает разметку: элементы здесь не строки, которые мы пишем в HTML-файлах, а объекты. Каждый объект связан с другими такими же объектами и знает о своём родителе, соседних объектах-элементах, вложенных объектах. В итоге получается древовидная структура, которая называется DOM (Document Object Model или объектная модель документа).</p>
+            <p class="info-block__text">В каждом DOM-дереве есть корневой объект, из которого «растут» другие объекты. Он называется document. document — страница, которая содержит все элементы разметки (объекты).</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Подключение скриптов</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Скрипты подключаются к странице с помощью тега script двумя способами:</p>
+            <p class="info-block__inner-title">Инлайновый код</p>
+            <p class="info-block__text">Код пишется внутри тега script.</p>
+            <pre class="info-block__code">&lt;body&gt; 
+  …
+  &lt;script&gt;console.log('Я — инлайновый скрипт');&lt;/script&gt; 
+&lt;/body&gt;</pre>
+            <p class="info-block__inner-title">Внешний файл с кодом</p>
+            <p class="info-block__text">Тегу script добавляется атрибут src, в котором указывается путь до файла со скриптом.</p>
+            <pre class="info-block__code">&lt;body&gt; 
+  …
+  &lt;script src="script.js"&gt;&lt;/script&gt; 
+&lt;/body&gt;</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Вывод элемента в консоль</h3>
+          <div class="info-block__content">
+            <pre class="info-block__code">console.log('Привет от JavaScript!');
+console.log(document.querySelector('selector'));
+
+// Вывод массива в консоль
+console.log([1, 2, 3, 4, 5]);
+
+// Вывод объекта в консоль
+console.log({
+  month: 'june',
+  day: 15
+});</pre>
+            <p class="info-block__note">* Консоль — это инструмент разработчика, который помогает тестировать код.</p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Типы данных</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">
+              number — числа;<br>
+              string — строки;<br>
+              boolean — логические или булевы значения, «истина (true)» или «ложь (false)»;<br>
+            </p>
+            <p class="info-block__note">* Все числа кроме 0 — true, т.е. 0 — false.</p>
+            <p class="info-block__note">* Все строки кроме пустой строки — true, т.е. пустая строка '' — false.</p>
+            <p class="info-block__text">
+              array — массив, хранит последовательность значений и порядок этих значений важен;<br>
+              object — объект, состоит из множества пар «ключ-значение», порядок этих пар не важен.
+            </p>
+            <pre class="info-block__code">// Массив
+[1, 2, 3, 4, 5]
+
+// Объект
+{
+  month: 'june',
+  day: 15
+}</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Объявление и присваивание переменных</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Для объявления переменных используются заявления var, let и const после которых необходимо объявить переменную</p>
+            <p class="info-block__text">Для операции присваивания используется знак равенства</p>
+            <pre class="info-block__code">let number = 7;
+let variableName = 'Я значение переменной!';
+let isElementTrue = true;
+let element = document.querySelector('selector');</pre>
+            <p class="info-block__note">* Зарезервированные ключевые слова в ECMAScript 2015:<a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#Ключевые_слова" target="_blank">https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#Ключевые_слова</a></p>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Функции</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Функция - это блок кода, предназначенный для выполнения конкретной задачи. Функцию можно использовать многократно написав всего один раз. Она не просто содержит в себе значение, как переменная, а выполняет какое-то действие и решает какую-то задачу: считает, сравнивает, ищет.</p>
+            <pre class="info-block__code">var functionName = function (parameter1, parameter2) {
+  // Действия, которые выполняет функция или «тело функции»
+};</pre>
+            <p class="info-block__text">functionName — имя переменной, которая содержит в себе функцию. По этому имени мы сможем обращаться к функции и использовать её много раз.</p>
+            <p class="info-block__note">* Название такой переменной это и есть название функции.</p>
+            <p class="info-block__note">* Название функции должно быть в форме глагола - это общепринятое правило именования.</p>
+            <p class="info-block__text">Чтобы создать функцию используем ключевое слово function, а дальше внутри круглых скобок добавляем параметры, которые функция будет использовать каждый раз, как мы к ней обратимся.</p>
+            <p class="info-block__note">* Параметры работают так же, как переменные.</p>
+            <p class="info-block__inner-title">~ Вызов функции ~</p>
+            <p class="info-block__text">Чтобы функция начала свою работу, нужно обратиться к функции по её имени, с указанными параметрами (аргументами) внутри круглых скобок.</p>
+            <pre class="info-block__code">functionName(parameter1, parameter2);</pre>
+            <p class="info-block__note">* Кстати, правильно говорить «функция принимает параметры», но при этом мы «передаём функции аргументы». Дело в том, что параметры - значения, которые мы задаём в момент объявления функции. Их же мы используем и в теле функции. А аргументы - значения, которые мы передаём в функцию при её вызове.</p>
+            <p class="info-block__inner-title">~ Возврат функции ~</p>
+            <p class="info-block__text">Чтобы функция смогла выполнить код и отдать (возвратить) результат операций для дальнейшей работы с этим результатом используется оператор return</p>
+            <p class="info-block__note">* Код, написанный на новой строке после return, не выполняется.</p>
+            <p class="info-block__note">* Функция не может вернуть сразу много значений, она возвращает только один результат.</p>
+            <p class="info-block__note">* Если внутри функции нет return или после return не указано, какое значение нужно вернуть, функция вернёт undefined, иными словами, ничего.</p>
+            <pre class="info-block__code">var functionName = function (parameter1, parameter2) {
+  var result = parameter1 + parameter2;
+  return result;
+};</pre>
+            <p class="info-block__inner-title">~ Функции как переменные ~</p>
+            <p class="info-block__text">Функции, которые имеют собственное название можно использовать так же, как и переменные.</p>
+            <pre class="info-block__code">var variableName = functionName(parameter1, parameter2);</pre>
+            <p class="info-block__inner-title">~ Анонимные функции ~</p>
+            <p class="info-block__text">Функции, которые не имеют названия, называются анонимными функциями.</p>
+            <pre class="info-block__code">function () {};</pre>
+            <p class="info-block__inner-title">~ Локальные переменные ~</p>
+            <p class="info-block__text">Переменные объявленные внутри функции, являются локальными и могут использоваться только внутри функции.</p>
+            <pre class="info-block__code">// переменная localVariable в этой части кода недоступна
+
+var functionName = function (parameter1, parameter2) {
+  var localVariable = "значение переменной";
+  // переменная localVariable может доступна только внутри этой функции
+}
+
+// переменная localVariable в этой части кода недоступна</pre>
+            <p class="info-block__note">* Поскольку локальные переменные распознаются только внутри их функций, переменные с одинаковым именем могут использоваться в разных функциях.</p>
+            <p class="info-block__text">То же самое произойдёт, если мы захотим обратиться снаружи к параметру функции. Параметр хоть и задаётся снаружи, но ведёт себя, как переменная внутри функции.</p>
+            <p class="info-block__text">А всё из-за того, что у каждой функции есть область видимости — все значения, доступные для этой функции. Область видимости ограничивается самой функцией. </p>
+            <p class="info-block__inner-title">~ Замыкания ~</p>
+            <p class="info-block__text">Замыкание — функция, которая помнит о своём окружении. То есть это функция + все значения переменных вне локальной области видимости этой функции.</p>
+            <p class="info-block__note">* Речь идёт только о переменных, которые функция использует в своём коде.</p>
+            <p class="info-block__text">Благодаря замыканиям мы можем зафиксировать какое-то значение в функции, а использовать саму функцию позже.</p>
+            <pre class="info-block__code">var functionName = function (parameter) {
+  return function () {
+    console.log(parameter);
+  };
+};
+ 
+var someVariable = functionName('любое значение параметра');
+schoolkid(); // Выведет: любое значение параметра</pre>
+          </div>
+        </div>
+        <div class="info-block"><i class="icon icon-pin"></i>
+          <h3 class="info-block__title">Объект event</h3>
+          <div class="info-block__content">
+            <p class="info-block__text">Объект event — параметр функции-обработчика. Он всегда передаётся браузером в эту функцию в момент наступления события.</p>
+            <p class="info-block__text">Чтобы использовать event, достаточно указать этот объект параметром функции-обработчика и написать инструкции.</p>
+            <p class="info-block__text">У объекта события есть много полезных свойств. Например, тип события, введённый символ, координаты курсора в момент наступления события и многое другое.</p>
+            <p class="info-block__inner-title">preventDefault()</p>
+            <p class="info-block__text">Чтобы отменить для некоторых элементов страницы действие по умолчанию, например для кнопок с типом submit или для ссылок с указанным href применяется метод preventDefault().</p>
+            <p class="info-block__text">Для этого достаточно к объекту event, применить метод preventDefault().</p>
+            <pre class="info-block__code">link.addEventListener('click', function(evt) { 
+  evt.preventDefault(); // Отменяем действие по умолчанию
+  // Добавляем инструкции для события клика
+});</pre>
+            <p class="info-block__inner-title">keyCode</p>
+            <p class="info-block__text">С помощью свойства keyCode для каждой клавиши, которую нажал пользователь можно определить её код. Найти код любой клавиши можно <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode" target="_blank">здесь</a>.</p>
+            <pre class="info-block__code">document.addEventListener('keydown', function(evt) {
+ if (evt.keyCode === 27) { // Проверяем, что код клавиши равен 27
+   // Код отсюда выполнится только при нажатии ESC
+ }
+});</pre>
+            <p class="info-block__note">* Кроме keyCode есть и другие свойства для определения нажатой клавиши. Например, key и code. Они возвращают названия клавиш, а не их номера.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <script src="../js/libs.js?200609"></script>
+    <script src="../js/script.js?200609"></script>
+  </body>
+</html>
